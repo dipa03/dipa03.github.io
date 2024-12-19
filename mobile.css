@@ -1,0 +1,83 @@
+/* Custom mobile styles to complement Tailwind */
+
+@media screen and (max-width: 768px) {
+    /* Progress bar adjustments */
+    #progress-container {
+        height: 3px;
+    }
+
+    #site-name {
+        margin: auto !important;
+    }
+
+    #header-nav {
+        margin: auto !important;
+    }
+
+    /* About section image adjustment */
+    #about #headshot {
+        width: 100% !important;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* Skills circle adjustments */
+    .skills-circle {
+        transform: scale(0.8);
+        margin: 2rem auto;
+    }
+
+    /* Project cards */
+    .project-card {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Company logos */
+    .company-logo {
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Resume section */
+    #resume img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Contact section */
+    #contact a {
+        font-size: 1.2rem;
+        word-break: break-all;
+    }
+    #about h2 {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+        /* Remove any existing margin-left percentage */
+        margin-left: 0 !important;
+    }
+}
+
+/* Adjust skill icons positioning for mobile */
+@media screen and (max-width: 768px) {
+    .skills-container img {
+        transform: scale(0.8);
+    }
+    
+    /* Center all skill icons in a grid layout for mobile */
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        place-items: center;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Ensure proper spacing in header */
+    header .container {
+        text-align: center;
+    }
+}
