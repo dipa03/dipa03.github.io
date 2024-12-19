@@ -73,6 +73,10 @@
         place-items: center;
         margin: 2rem auto;
     }
+
+    #logos {
+        margin-left: 30px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -80,4 +84,9 @@
     header .container {
         text-align: center;
     }
+}
+
+#about-me-text{
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
 }
