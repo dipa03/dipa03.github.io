@@ -43,7 +43,7 @@
             <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-6 md:gap-0">
                 <!-- Logo and social icons group -->
                 <h1 id="site-name" class="text-2xl md:text-3xl font-bold text-purple-400 flex items-center gap-4">
-                    <span><a href="/">dulce perez</a></span>
+                    <span><a href="/">dulce perez angeles</a></span>
                     <!-- LinkedIn Icon (DevIcon SVG) -->
                     <a href="https://www.linkedin.com/in/dulceperez03/" target="_blank" class="text-gray-300 hover:text-purple-400">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 ml-2" viewBox="0 0 128 128">
@@ -59,6 +59,7 @@
                     <ul class="flex space-x-8">
                         <li><a href="#about" class="text-xl hover:text-purple-400">About</a></li>
                         <li><a href="#experience" class="text-xl text-gray-300 hover:text-purple-400">Experience</a></li>
+                        <li><a href="#resume" class="text-xl text-gray-300 hover:text-purple-400">Resume</a></li>
                         <li><a href="#contact" class="text-xl text-gray-300 hover:text-purple-400">Contact</a></li>
                     </ul>
                 </nav>
@@ -70,67 +71,50 @@
 
     <main class="container mx-auto px-4 py-10">
         <!-- Hero Section -->
-        <section class="text-center py-12">
+        <section class="text-center py-5">
             <h2 class="text-5xl font-extrabold text-purple-500">Hi! My name is Dulce</h2>
-            <p class="mt-4 text-lg text-gray-400">Economics and Computer Science student.</p>
+            <p class="mt-3 text-lg text-gray-400">Student @ UAB studying Economics and Computer Science</p>
         </section>
 
         <!-- About & Skills Combined Section -->
-        <section id="about" class="mt-5">
+        <section id="about">
             <div class="flex flex-col lg:flex-row items-center justify-between gap-12 px-6">
-                <!-- Left Side: About Me -->
-                <div class="flex-1">
-                    <h2 class="text-4xl font-extrabold text-purple-500" style="margin-left: 58%;">About Me</h2>
-                    <div class="flex flex-col md:flex-row items-center mt-10 space-y-6 md:space-y-0 md:space-x-10">
-                        <!-- Headshot - Increased size -->
-                        <div id="headshot" class="bg-gray-700 rounded-full overflow-hidden flex items-center justify-center" style="width: 750px; height: auto;">
-                            <img src="https://media.licdn.com/dms/image/v2/D4E03AQFPofjQqNHubA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730207640132?e=1740009600&v=beta&t=YdaYoSnvFod5yI7IDJdgGpON6sgIr008LIP3_5v9FrI" alt="Your Profile Picture" class="w-full h-full object-cover">
-                        </div>
-                        
-                        <!-- About Text -->
-                        <p class="text-lg md:text-base text-gray-400 text-center md:text-left max-w-xl">
-                            I am currently pursuing a Bachelor of Science in Computer Science and Economics at the University of Alabama at Birmingham. My academic journey is driven by a strong interest in how technology and economics intersect, particularly in the fields of software development and data analysis. I have always been passionate about building innovative solutions to real-world problems, and I am excited about leveraging my skills to contribute to the evolving tech landscape.
-                        </p>
+                <!-- Left Column: Headshot -->
+                <div class="flex-1 flex justify-center">
+                    <div id="headshot" class="bg-gray-700 rounded-full overflow-hidden flex items-center justify-center" style="width: 250px; height: 250px;">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E03AQFPofjQqNHubA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730207640132?e=1740009600&v=beta&t=YdaYoSnvFod5yI7IDJdgGpON6sgIr008LIP3_5v9FrI" alt="Your Profile Picture" class="w-full h-full object-cover">
                     </div>
                 </div>
 
-                <!-- Right Side: Skills -->
+                <!-- Middle Column: About Me Text -->
+                <div class="flex-1 flex flex-col items-center text-center lg:text-center">
+                    <p class="text-lg md:text-base text-gray-400 max-w-xl leading-relaxed">
+                        As I approach graduation in May of 2025, I am eager to contribute to the ever-advancing field of economics, combining my academic training in economic theory and computer science along with internship experiences. Please feel free to navigate through my website to view some of my internships, academic projects, and extracurriculars in detail!
+                    </p>
+                </div>
+
+                <!-- Right Column: Skills -->
                 <div class="flex-1 flex flex-col items-center">
-                    <h3 class="text-3xl font-bold text-purple-500 mb-40"></h3>
-                    <!-- Moved circle container up -->
-                    <div class="relative w-64 h-64 mx-auto bg-gradient-to-r mt-[-30%]">
-                        <!-- Logos container, moved along with the circle -->
-                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 h-11/12 flex items-center justify-center" style="top: 56%; left: 58%; transform: translate(-50%, -50%);">
+                    <h3 class="text-3xl font-bold text-purple-500 mb-12"></h3>
+                    <!-- Circle of Logos -->
+                    <div class="relative w-64 h-64 bg-gradient-to-r">
+                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 h-11/12 flex items-center justify-center">
                             <!-- Logos evenly around the edge of the circle -->
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/mysql/mysql-original.svg" alt="SQL logo"
-                                alt="MySQL" class="w-12 h-12 absolute" 
-                                style="transform: translate(-50%, -50%) translateX(-75px) translateY(45px);" />
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/r/r-original.svg" 
-                                alt="R" class="w-12 h-12 absolute" 
-                                style="transform: translate(-50%, -50%) translateX(90px) translateY(-45px);" />
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/1200px-New_Power_BI_Logo.svg.png" alt="Power BI logo"
-                                alt="PowerBI" class="w-12 h-12 absolute" 
-                                style="transform: translate(-50%, -50%) translateX(90px) translateY(45px);" />
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/c/c-original.svg" 
-                                alt="C" class="w-12 h-12 absolute" 
-                                style="transform: translate(-50%, -50%) translateX(10px) translateY(-90px);" />
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/git/git-original.svg" 
-                                alt="Git" class="w-12 h-12 absolute" 
-                                style="transform: translate(-50%, -50%) translateX(-75px) translateY(-45px);" />
-                        
+                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/mysql/mysql-original.svg" alt="SQL logo" class="w-12 h-12 absolute" style="transform: translate(-50%, -50%) translateX(-75px) translateY(45px);" />
+                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/r/r-original.svg" alt="R" class="w-12 h-12 absolute" style="transform: translate(-50%, -50%) translateX(90px) translateY(-45px);" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/1200px-New_Power_BI_Logo.svg.png" alt="Power BI logo" class="w-12 h-12 absolute" style="transform: translate(-50%, -50%) translateX(90px) translateY(45px);" />
+                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/c/c-original.svg" alt="C" class="w-12 h-12 absolute" style="transform: translate(-50%, -50%) translateX(10px) translateY(-90px);" />
+                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/git/git-original.svg" alt="Git" class="w-12 h-12 absolute" style="transform: translate(-50%, -50%) translateX(-75px) translateY(-45px);" />
+                            
                             <!-- Center logos -->
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/python/python-original.svg" 
-                                alt="Python" class="w-12 h-12 absolute" 
-                                style="transform: translate(-50%, -50%) translateX(10px);" />
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/java/java-original.svg" 
-                                alt="Java" class="w-14 h-14 absolute" 
-                                style="transform: translate(-50%, -50%) translateX(10px) translateY(90px);" />
+                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/python/python-original.svg" alt="Python" class="w-12 h-12 absolute" style="transform: translate(-50%, -50%) translateX(10px);" />
+                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/java/java-original.svg" alt="Java" class="w-14 h-14 absolute" style="transform: translate(-50%, -50%) translateX(10px) translateY(90px);" />
                         </div>
                     </div>
                 </div>
-                        
             </div>
-        </section> 
+        </section>
+
 
         <section id="experience" class="mt-20">
             <!-- Section Header -->
@@ -150,7 +134,7 @@
         
                 <!-- MOTION (GPC) -->
                 <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center flex flex-col">
-                    <img src="https://cdn.cookielaw.org/logos/9e3840d9-d3d2-4665-ac3b-b1cdce104745/3ed58153-38d6-4a08-9659-28d866b003c7/04f397de-1b0b-4e78-8006-c2546bf782b4/Motion_PP_SQ.png" alt="MOTION (GPC) Logo" class="w-38 h-36 mx-auto mb-4 object-contain">
+                    <img src="https://cdn.cookielaw.org/logos/9e3840d9-d3d2-4665-ac3b-b1cdce104745/3ed58153-38d6-4a08-9659-28d866b003c7/04f397de-1b0b-4e78-8006-c2546bf782b4/Motion_PP_SQ.png" alt="MOTION (GPC) Logo" class="w-40 h-36 mx-auto mb-3 object-contain">
                     <h3 class="text-xl font-semibold text-purple-400 mt-10">MOTION (GPC)</h3>
                     <p class="text-sm text-gray-400 mt-auto">May 2024 - Aug. 2024</p>
                 </div>
@@ -227,15 +211,10 @@
 
         <!-- Contact Section -->
         <section id="contact" class="mt-20">
-            <h2 class="text-3xl font-bold text-purple-500 text-center">Contact Me</h2>
-            <div class="max-w-2xl mx-auto mt-8 text-center">
-                <p class="text-lg text-gray-400">Feel free to reach out to me for any opportunities or collaborations. I'm always open to new projects and ideas.</p>
-                <!-- Email with Envelope Icon -->
-                <a href="mailto:dulcezerep01@gmail.com" class="mt-6 inline-flex items-center px-8 py-3 text-white text-3xl rounded-lg">
-                    <!-- Envelope Icon (Mail) -->
-                    <img class="w-10 h-10 mt-1" src="assets/images/envelope.png">
-                    dulcezerep01@gmail.com
-                </a>        
+            <h2 class="text-3xl font-bold text-purple-500 text-center">Contact Me!</h2>
+            <div class="max-w-2xl mx-auto mt-7 text-center">
+                <!-- <p class="text-lg text-gray-400">Feel free to reach out to me for any opportunities or collaborations. I'm always open to new projects and ideas.</p> -->
+                <!-- Email with Envelope Icon -->    
                 <!-- Icons Container -->
                 <div class="mt-6 flex justify-center gap-6 items-center">
                     <!-- LinkedIn Icon -->
@@ -246,6 +225,10 @@
                     <a href="https://github.com/dipa03" target="_blank" class="text-gray-300 hover:text-purple-400">
                         <img class="w-12 h-12" src="https://img.icons8.com/ios11/512/FFFFFF/github.png" alt="GitHub">
                     </a>
+                    <a href="mailto:dulcezerep01@gmail.com" class="text-gray-300 hover:text-purple-400">
+                        <!-- Envelope Icon (Mail) -->
+                        <img class="w-14 h-14 mt-1" src="assets/images/envelope.png">
+                    </a>    
                 </div>
             </div>
         </section>
@@ -254,7 +237,7 @@
 
     <footer class="bg-gray-800 py-6 mt-5">
         <div class="container mx-auto text-center">
-            <p class="text-gray-400">&copy; 2024 Dulce Perez. All rights reserved.</p>
+            <p class="text-gray-400">&copy; 2024 Dulce Perez Angeles. All rights reserved.</p>
         </div>
     </footer>
 
