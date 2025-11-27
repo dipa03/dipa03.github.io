@@ -1,279 +1,40 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Dulce Perez</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono&display=swap" rel="stylesheet">
+		
+		<link rel="modulepreload" href="/_app/immutable/entry/start.DRKR0Dmo.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/DiAvVjv9.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/DMqsEOkF.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BPX2u6nL.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.C__2PrIO.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/CqvqLNbv.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/CJETqYpY.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/Cuoy_hXt.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/jaaz2VJi.js">
+	</head>
+	<body class="bg-gray-900 text-white font-mono" data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_1al0112 = {
+						base: ""
+					};
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Dulce Perez</title>
-    <link rel="shortcut icon" href="assets/images/chicken.png" type="image/png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="mobile.css">
-    <style>
-        /* Progress bar container */
-        #progress-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: rgba(255, 255, 255, 0.2);
-            z-index: 50;
-        }
+					const element = document.currentScript.parentElement;
 
-        /* Actual progress bar */
-        #progress-bar {
-            height: 100%;
-            width: 0%;
-            background: #a855f7; /* Purple color */
-            transition: width 0.1s linear;
-        }
-    </style>
-</head>
-
-<body class="bg-gray-900 text-white font-mono">
-    <!-- Progress Bar -->
-    <div id="progress-container">
-        <div id="progress-bar"></div>
-    </div>
-
-    <header class="bg-gray-800 shadow-md py-6">
-        <div class="container mx-auto px-4">
-            <!-- Main header container - stack on mobile -->
-            <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-6 md:gap-0">
-                <!-- Logo and social icons group -->
-                <h1 id="site-name" class="text-2xl md:text-3xl font-bold text-purple-400 flex items-center gap-4">
-                    <span><a href="/">dulce perez angeles</a></span>
-                    <a href="https://www.linkedin.com/in/dulceperez03/" target="_blank" class="text-gray-300 hover:text-purple-400">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 ml-2" viewBox="0 0 128 128">
-                            <path fill="#0076b2" d="M116 3H12a9 9 0 00-9 9v104a9 9 0 009 9h104a9 9 0 009-9V12a9 9 0 00-9-9zM39 107H21V48h18zm-9-67.5a10.5 10.5 0 1110.5-10.5 10.5 10.5 0 01-10.5 10.5zm80 67.5H92V78c0-6.75-1.25-15.5-9.5-15.5S71 69.75 71 77v30H53V48h17v8h.25c2.5-4.75 8.5-9.75 17.5-9.75 18.75 0 22.25 12.375 22.25 28.5z"/>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/dipa03" target="_blank" class="text-gray-300 hover:text-purple-400">
-                        <img class="w-10 h-10" src="https://img.icons8.com/ios11/512/FFFFFF/github.png" alt="GitHub">
-                    </a>
-                </h1>
-                <nav id="header-nav">
-                    <ul class="flex space-x-8">
-                        <!-- <li><a href="#about" class="text-xl hover:text-purple-400">About</a></li> -->
-                        <li><a href="#experience" class="text-xl text-gray-300 hover:text-purple-400">Experience</a></li>
-                        <li><a href="#resume" class="text-xl text-gray-300 hover:text-purple-400">Resume</a></li>
-                        <li><a href="#contact" class="text-xl text-gray-300 hover:text-purple-400">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    
-    
-
-    <main class="container mx-auto px-4 py-10">
-        <section class="text-center py-5">
-            <h2 class="text-5xl font-extrabold text-purple-500">Hi! My name is Dulce</h2>
-            <p class="mt-3 text-lg text-gray-400">Student @ UAB studying Economics and Computer Science</p>
-        </section>
-
-        <!-- About & Skills Combined Section -->
-        <section id="about">
-            <div class="flex flex-col lg:flex-row items-center justify-between gap-12 px-6">
-                <!-- Left Column: Headshot -->
-                <div class="flex-1 flex justify-center">
-                    <div id="headshot" class="bg-gray-700 rounded-full overflow-hidden flex items-center justify-center" style="width: 250px; height: 250px;">
-                        <img src="https://media.licdn.com/dms/image/v2/D4E03AQFPofjQqNHubA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730207640132?e=1740009600&v=beta&t=YdaYoSnvFod5yI7IDJdgGpON6sgIr008LIP3_5v9FrI" alt="Your Profile Picture" class="w-full h-full object-cover">
-                    </div>
-                </div>
-
-                <!-- Middle Column: About Me Text -->
-                <div class="flex-1 flex flex-col items-center text-center lg:text-center">
-                    <p id="about-me-text" class="text-gray-400 leading-relaxed max-w-xl text-lg md:text-base">
-                        As I approach graduation in May of 2025, I am eager to contribute to the ever-advancing field of economics, combining my academic training in economic theory and computer science along with internship experiences. Please feel free to navigate through my website to view some of my internships, academic projects, and extracurriculars in detail!
-                    </p>
-                </div>
-
-                <!-- Right Column: Skills -->
-                <div class="flex-1 flex flex-col items-center">
-                    <h3 class="text-3xl font-bold text-purple-500 mb-12"></h3>
-                    <!-- Circle of Logos -->
-                    <div id="logos" class="relative w-64 h-64 bg-gradient-to-r">
-                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 h-11/12 flex items-center justify-center">
-                            <!-- Logos evenly around the edge of the circle -->
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/mysql/mysql-original.svg" alt="SQL logo" class="w-12 h-12 absolute" style="transform: translate(-50%, -50%) translateX(-75px) translateY(45px);" />
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/r/r-original.svg" alt="R" class="w-12 h-12 absolute" style="transform: translate(-50%, -50%) translateX(90px) translateY(-45px);" />
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/1200px-New_Power_BI_Logo.svg.png" alt="Power BI logo" class="w-12 h-12 absolute" style="transform: translate(-50%, -50%) translateX(90px) translateY(45px);" />
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/c/c-original.svg" alt="C" class="w-12 h-12 absolute" style="transform: translate(-50%, -50%) translateX(10px) translateY(-90px);" />
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/git/git-original.svg" alt="Git" class="w-12 h-12 absolute" style="transform: translate(-50%, -50%) translateX(-75px) translateY(-45px);" />
-                            
-                            <!-- Center logos -->
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/python/python-original.svg" alt="Python" class="w-12 h-12 absolute" style="transform: translate(-50%, -50%) translateX(10px);" />
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/java/java-original.svg" alt="Java" class="w-14 h-14 absolute" style="transform: translate(-50%, -50%) translateX(10px) translateY(90px);" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="experience" class="mt-20">
-            <!-- Section Header -->
-            <header class="text-center mb-12">
-                <h2 class="text-4xl font-extrabold text-purple-500 mb-4">Companies I Worked With</h2>
-                <p class="text-xl text-gray-400">Here are the companies I have had the pleasure of working with, contributing to diverse projects and initiatives.</p>
-            </header>
-        
-            <!-- Project Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-                <!-- FIRST HORIZON -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center flex flex-col">
-                    <img src="assets/images/first_horizon.png" alt="FIRST HORIZON Logo" class="w-24 h-22 mx-auto mt-6 object-contain">
-                    <h3 class="text-xl font-semibold text-purple-400 mt-20">FIRST HORIZON</h3>
-                    <p class="text-sm text-gray-400 mt-auto">Sep. 2024 - Nov. 2024</p>
-                </div>
-        
-                <!-- MOTION (GPC) -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center flex flex-col">
-                    <img src="https://cdn.cookielaw.org/logos/9e3840d9-d3d2-4665-ac3b-b1cdce104745/3ed58153-38d6-4a08-9659-28d866b003c7/04f397de-1b0b-4e78-8006-c2546bf782b4/Motion_PP_SQ.png" alt="MOTION (GPC) Logo" class="w-40 h-36 mx-auto mb-3 object-contain">
-                    <h3 class="text-xl font-semibold text-purple-400 mt-10">MOTION (GPC)</h3>
-                    <p class="text-sm text-gray-400 mt-auto">May 2024 - Aug. 2024</p>
-                </div>
-        
-                <!-- TENNESSEE VALLEY AUTHORITY -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center flex flex-col">
-                    <img src="https://download.logo.wine/logo/Tennessee_Valley_Authority/Tennessee_Valley_Authority-Logo.wine.png" alt="TENNESSEE VALLEY AUTHORITY Logo" class="w-38 h-36 mx-auto mb-4 object-contain">
-                    <h3 class="text-xl font-semibold text-purple-400 mt-10">TENNESSEE VALLEY AUTHORITY</h3>
-                    <p class="text-sm text-gray-400 mt-auto">Jan. 2023 - Dec. 2023</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Projects Section -->
-        <section id="projects" class="mt-20">
-            <h2 class="text-4xl font-extrabold text-purple-500 text-center">My Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-                <!-- Automated Testing Framework -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold text-purple-400">Automated Testing Framework</h3>
-                    <p class="text-sm text-gray-400 italic">Google BigQuery (GBQ), BigQuery API, Pandas</p>
-                    <p class="text-gray-300 mt-4">Developed a framework to ingest queries, execute them against GBQ, and push data frames to GBQ tables. Created a program that takes in query templates and concatenates parameters from JSON Metadata objects, alleviating the end-user’s need to recreate duplicate structures of queries.</p>
-                </div>
-
-                <!-- SQL Program Reporting Database -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold text-purple-400">SQL Program Reporting Database</h3>
-                    <p class="text-sm text-gray-400 italic">SQL Server Integration Services (SSIS), SQL Server Management Studio (SSMS)</p>
-                    <p class="text-gray-300 mt-4">Performed ETL processes to SQL server with spreadsheet data using SSIS. Scripted customized views within SSMS for integration on PowerBI. Implemented and redesigned a schema diagram for the relational database.</p>
-                </div>
-
-                <!-- Big Data Processing -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold text-purple-400">Big Data Processing</h3>
-                    <p class="text-sm text-gray-400 italic">Microsoft Azure, Databricks, PySpark</p>
-                    <p class="text-gray-300 mt-4">Reviewed previous code to revamp process for end-use meter data aggregation, improving quality metrics.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="resume" class="mt-20">
-            <!-- Section Header -->
-            <header class="text-center mb-12">
-                <h2 class="text-4xl font-extrabold text-purple-500 mb-4">My Resume</h2>
-                <p class="text-xl text-gray-400">You can view or download my resume below.</p>
-            </header>
-        
-            <div class="flex justify-center items-center flex-col space-y-8">
-                <!-- Resume Image -->
-                <div class="w-120 h-80 mb-8">
-                    <img src="assets/images/resume.png" alt="Resume Thumbnail" class="object-contain w-full h-full rounded-lg shadow-lg">
-                </div>                
-        
-                <!-- Resume Buttons -->
-                <div class="button-list flex space-x-6">
-                    <!-- View Resume Button -->
-                    <a href="assets/documents/Dulce_Perez Angeles_Full_Resume.pdf" target="_blank" class="relative inline-block">
-                        <div class="button-list__overlay absolute inset-0 bg-purple-500 opacity-0 hover:opacity-50 transition-opacity duration-300"></div>
-                        <div class="button-list__background p-4 rounded-md shadow-lg bg-purple-600 text-white text-center">
-                            <div class="button-list__title">View</div>
-                        </div>
-                    </a>
-        
-                    <!-- Download Resume Button -->
-                    <a href="assets/documents/Dulce_Perez Angeles_Resume.pdf" download class="relative inline-block">
-                        <div class="button-list__overlay absolute inset-0 bg-purple-500 opacity-0 hover:opacity-50 transition-opacity duration-300"></div>
-                        <div class="button-list__background p-4 rounded-md shadow-lg bg-purple-600 text-white text-center">
-                            <div class="button-list__title">Download</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>        
-
-        <!-- Contact Section -->
-        <section id="contact" class="mt-20">
-            <h2 class="text-3xl font-bold text-purple-500 text-center">Contact Me!</h2>
-            <div class="max-w-2xl mx-auto mt-7 text-center">
-                <!-- <p class="text-lg text-gray-400">Feel free to reach out to me for any opportunities or collaborations. I'm always open to new projects and ideas.</p> -->
-                <!-- Email with Envelope Icon -->    
-                <!-- Icons Container -->
-                <div class="mt-6 flex justify-center gap-6 items-center">
-                    <!-- LinkedIn Icon -->
-                    <a href="https://www.linkedin.com/in/dulceperez03/" target="_blank" class="text-gray-300 hover:text-purple-400">
-                        <img class="w-10 h-10" src="assets/images/linkedIn.png" alt="LinkedIn">
-                    </a>
-                    <!-- GitHub Icon -->
-                    <a href="https://github.com/dipa03" target="_blank" class="text-gray-300 hover:text-purple-400">
-                        <img class="w-12 h-12" src="https://img.icons8.com/ios11/512/FFFFFF/github.png" alt="GitHub">
-                    </a>
-                    <a href="mailto:dulcezerep01@gmail.com" class="text-gray-300 hover:text-purple-400">
-                        <!-- Envelope Icon (Mail) -->
-                        <img class="w-14 h-14 mt-1" src="assets/images/envelope.png">
-                    </a>    
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="bg-gray-800 py-6 mt-5">
-        <div class="container mx-auto text-center">
-            <p class="text-gray-400">&copy; 2024 Dulce Perez Angeles. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- JavaScript for Scroll Progress Bar -->
-    <script>
-      // Progress bar code (keep your existing progress bar code)
-      const progressBar = document.getElementById('progress-bar');
-        window.addEventListener('scroll', () => {
-            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrollPosition = window.scrollY;
-            const scrollPercentage = (scrollPosition / scrollHeight) * 100;
-            progressBar.style.width = scrollPercentage + '%';
-        });
-
-        // New smooth scrolling code
-        document.addEventListener("DOMContentLoaded", function() {
-            // Select all navigation links
-            const navLinks = document.querySelectorAll('nav a');
-
-            // Add click event listener to each navigation link
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault(); // Prevent default jump-to behavior
-                    
-                    // Get the target section id from the href attribute
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetSection = document.getElementById(targetId);
-                    
-                    if (targetSection) {
-                        // Smooth scroll to the target section
-                        targetSection.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-        });
-    </script>
-</body>
-
+					Promise.all([
+						import("/_app/immutable/entry/start.DRKR0Dmo.js"),
+						import("/_app/immutable/entry/app.C__2PrIO.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+	</body>
 </html>
